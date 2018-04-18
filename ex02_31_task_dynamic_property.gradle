@@ -1,0 +1,12 @@
+// dynamic properties have been deprecated, and new "extra properties" instead
+// https://discuss.gradle.org/t/deprecation-of-dynamic-properties-and-the-new-extra-properties/7745/2
+
+task copyFiles {
+    // Find files from wherever, copy them
+    // (then hardcode a list of file for illustration)
+    ext.fileManifest = ['data.csv', 'config.json']
+}
+
+task createArtifact(dependsOn: copyFiles) << {
+    println "FILES IN MANIFEST: ${copyFiles.ext.fileManifest}"
+}

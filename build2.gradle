@@ -1,0 +1,12 @@
+task setupDatabaseTests << {
+	// this is the task's existing action
+	println 'load test data'
+}
+
+setupDatabaseTests.doFirst {
+	println 'create schema'
+}
+
+setupDatabaseTests.doFirst {
+	println 'begin'
+}
