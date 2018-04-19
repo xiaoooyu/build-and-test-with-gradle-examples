@@ -19,4 +19,7 @@
 - example_04_25     default tasks
 - example_04_28     Maven plugin with all attrs
 - example_04_30     Maven config install
-- 
+- example_04_32     Maven upload local
+- example_04_34     Maven upload by webdav
+- example_04_37     convert pom to gradle build script
+- example_04_38     retrieves project metadata from pom.xml and configures Gradle accordingly (however seems not working for latest gradle 4.6)
