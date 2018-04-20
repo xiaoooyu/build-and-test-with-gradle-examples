@@ -1,12 +1,26 @@
 
+## Chapter 1. Hello Gradle
+- example_1_03      java build
+
+## Chapter 2. Tasks
+- example_2_03      hello world
+- example_2_04      append actions 
+- example_2_06      configure vs action
+- example_2_09      tasks' methods & properties
+- example_2_33      copy files
+- example_2_34      jar
+- example_2_35      java exec
+- example_2_36      custom task
+- example_2_37      custom task with source
+
 ## Chapter 3. Ant
-- example_03_07     Importing Custom Ant Tasks
-- example_03_11     Complex Ant Configuration
-- example_03_12     Importing an Extire Ant Build File
-- example_03_15     Ant Target and Gradle Task Codependence
+- example_03_07     custom Ant task
+- example_03_11     Ant configuration
+- example_03_12     importing an extire Ant build
+- example_03_15     Ant and Gradle Codependence
 - example_03_18     the gamut of Groovy syntax
-- example_03_19     Groovy regular expression
-- example_03_21     Gradle use Ant path reference
+- example_03_19     regular expression
+- example_03_21     use Ant path reference
 - example_03_22     Ant use Gradle paths
 
 ## Chapter 4. Maven
@@ -31,5 +45,11 @@
 - example_5_07      separating tests into unit and integration tests
 - example_5_08      Spock: a expressive DSL testing under the umbrella of JUnit
 - example_5_10      Geb & EasyB: web browsers for testing what is primarily thought of as a task for Selenium/WebDriver
+
+## Chapter 6. Multiproject
+- example_6_02      Multiproject-individual
+- example_6_06      Multiproject-unified
+- example_6_07      Multiproject-hybrid
+
 
 
