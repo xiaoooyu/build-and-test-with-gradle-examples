@@ -1,0 +1,24 @@
+allprojects { 
+  apply plugin: 'java'
+
+  repositories {
+    mavenCentral()
+  }
+}
+
+evaluationDependsOn(':codec')
+
+dependencies {
+  compile project(':codec')
+  compile project(':content')
+}
+
+[ 'shakespeare', 'williams', 'shelley', 'chesterton' ].each { poet ->
+  task "${poet}"(type: JavaExec) {
+    group = 'Encoded Poetry'
+    args = [ poet ]
+    main = 'org.gradle.example.codedpoet.CommandLine'
+    classpath sourceSets.main.runtimeClasspath, 
+              project(':codec').sourceSets.main.runtimeClasspath
+  }
+}
